@@ -16,7 +16,7 @@ int main() {
 
     errno_t err = fopen_s(&csv, "employees.csv", "r");
     if (err != 0 || !csv) {
-        perror("Ошибка открытия файла");
+        perror("Error \n");
         return 1;
     }
 
